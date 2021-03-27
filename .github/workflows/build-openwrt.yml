@@ -33,7 +33,7 @@ jobs:
       - name: Clone OpenWrt and tuanqing/mknop
         run: |
           git clone --depth 1 -b "$OPENWRT_BRANCH" "$OPENWRT_URL" ./openwrt
-          git clone --depth 1 https://github.com/tuanqing/mknop.git
+          git clone --depth 1 https://github.com/1980Add/mknop.git
       - name: Copy feeds.conf.default
         run: |
           [ -e ./feeds.conf.default ] && cp ./feeds.conf.default ./openwrt/
